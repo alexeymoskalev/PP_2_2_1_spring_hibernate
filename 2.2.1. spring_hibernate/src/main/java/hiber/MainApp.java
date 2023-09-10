@@ -38,8 +38,7 @@ public class MainApp {
 
       List<User> users = userService.listUsers();
       for (User user : users) {
-         System.out.printf("Id = %d %n First Name = %s %n Last Name = %s %n Email = %s %n %n",
-                 user.getId(), user.getFirstName(), user.getLastName(), user.getEmail());
+         System.out.println(user);
       }
 
       System.out.println(userService.getUser("Gaz", 22));
